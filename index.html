@@ -1,5 +1,162 @@
-Stefan Gawrys
+<html>
 
+	<head>
+		<title>Stefan Gawrys</title>
+		<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script src="/Processing/processing-1.3.6.js"></script>
+		<script src="toolkit.js"></script>
+		
+		<style type="text/css">
+			.navbar
+			{
+				background-color:#000000;
+			}
+			body
+			{
+				padding-top:60px;
+			}
+			#wrap
+			{
+				min-height:100%;
+				height:auto !important;
+				height:100%;
+				margin:0 auto -60px;
+			}
+			#footer 
+			{
+				height: 60px;
+				background-color:#f5f5f5;
+			}
+			
+			@media (max-width:767px) {
+				#footer {
+					margin-left:-20px;
+					margin-right:-20px;
+					padding-left:20px;
+					padding-right:20px;
+				}
+			}
 
+		</style>
+	</head>
+	
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="#">Stefan Gawrys</a>
+					<div class="nav-collapse collapse">
+						<p class="navbar-text pull-right">
+							A website to show off my work.
+						</p>
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a><li>
+							<li><a href="#projects">Projects</a><li>
+							<li><a href="#contact">Contact Me</a><li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="wrap" class="container-fluid">
+			<div class="row-fluid">
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<li class="nav-header">Useful Links</li>
+							<li class="active"><a href="#">Stefan Gawrys' Homepage</a></li>
+							<li><a href="http://www.cs.sunysb.edu/">Stony Brook Computer Science Department</a></li>
+							<li><a href="http://www.ams.sunysb.edu/">Stony Brook Applied Mathematics and Statistics Department</a></li>
+							<li><a href="https://psns.cc.stonybrook.edu/psp/he90prods/?cmd=login">Stony Brook Solar</a></li>
+							<li class="nav-header">Game Programming Resources</li>
+							<li><a href="http://www-cs-students.stanford.edu/~amitp/gameprog.html">Amit's Game Programming Information</a></li>
+							<li><a href="http://www.gamedev.net/page/resources/_/technical/game-programming/tilemap-based-game-techniques-handling-terrai-r934">Handling Terrain Transitions</a></li>
+							<li><a href="http://devmag.org.za/2009/04/25/perlin-noise/">Perlin Noise Techniques</a></li>
+							<li><a href="http://www.iquilezles.org/www/index.htm">Computer Graphics Articles by Iñigo Quílez</a></li>
+							<li><a href="http://qiao.github.com/PathFinding.js/visual/">Visual Guide to Pathfinding Algorithms</a></li>
+							<li class="nav-header">Learning Resources</li>
+							<li><a href="http://codingforinterviews.com/books">Coding Interview Readings</a></li>
+							<li><a href="http://www.cis.syr.edu/~wedu/seed/all_labs.html">Instructuional Laboratories for Computer Security Education</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span9">
+					<a id="about"></a>
+					<div class="hero-unit">
+						<h1>About me.</h1>
+						<p>I am a student at Stony Brook currently pursuing a B.S. in Computer Science and Applied Mathematics and Statistics.<br/>
+						I have worked as a Teacher's Assistant for CSE102 an Introduction to Web Design and Development.<br/>
+						At my current job, I am a software developer who has worked with both mobile/web development using C# and Objective-C.<br/>
+						My resume can be found at <a href="/Documents/StefanGawrysResume.doc">Stefan Gawrys' Resume</a><br/></p>
+					</div>
+					<div class="row-fluid">
+						<div class="span9">
+							<a id="projects"></a>
+							<div class="hero-unit">
+								<h2>My Projects:</h2>
+								<h4>These are only a select few of my projects, as some I am not able to disclose online</h4>
+									<span>Music visualizer in processing.js with the Soundcloud API</span><br/>
+									<a href="http://stefangawrys.com/psound.html"><img src="/Images/musicvis.png"/></a><br/>
+									<p>Machine learning in Python for learning music preferences (Final project for CSE352 - Artificial Intelligence)</p>
+									<a href="Images/aipy.png" class="thumnail"><img src="/Images/aipy.png"/></a><br/>
+									<span>Terrain generation using Perlin Noise in Java with the Libgdx library for Android:</span><br/>
+									<a href="Images/newmapandroid.png"><img src="/Images/newmapandroid.png"/></a><br/>
+									<span>Edge detection in OpenCV using Python:</span><br/>
+									<a href="Images/opencv.png"><img src="/Images/opencv.png"/></a><br/>
+									<span>Terrain generation using Perlin Noise in C# (Screenshot depicts growing river because of precipitation):</span><br/>
+									<a href="Images/Screenshot14.png"><img src="/Images/Screenshot14.png"/></a><br/>
+									<span>Election results viewer made in Java</span></br>
+									<a href="Images/cse219.png"><img src="/Images/cse219.png"/></a></br>
+									<span>Sketches made with Processing.js ( Click on canvas for interactivity )</span><br/>
+									<div id="canvas_nav">
+										<canvas width="640" height="480" id="sketch" data-processing-sources="/Processing/sixth.pde">
+									</div><br/>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span9">
+							<div class="hero-unit">
+								<a id="contact"></a>
+								<h3>Contact Information</h3>
+								<p>
+								Stefan Gawrys<br/>
+								Stony Brook University<br/>
+								Email: stefangawrys(at)gmail.com<br/>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				<p class="muted credit">Website created by Stefan Gawrys with Twitter Bootstrap</p>
+			</div>
+		</div>
 
-' GitHub Page
+	<script src="/bootstrap/js/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/bootstrap/js/bootstrap-typeahead.js"></script>
+	</body>
+	
+</html>
